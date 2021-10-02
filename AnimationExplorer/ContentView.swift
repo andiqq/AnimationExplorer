@@ -20,7 +20,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .rotationEffect(Angle.degrees(anim ? 360 : 0))
                 .animation(anim ? Animation.linear(duration: 1).repeatForever(autoreverses: false) : Animation.linear(duration: 0))
-                .opacity(opac ? 0 : 100 )
+                .opacity(opac ? 0 : 1 )
+                .animation(Animation.linear(duration: 2))
                 .padding(20)
             
             
